@@ -1,67 +1,132 @@
 @font-face {
-    font-family: Gotham-Thin;
+    font-family: Gotham;
     /* Гарнитура шрифта */
-    src: url(Gotham-Font/Gotham-Thin.otf);
+    src: url(Gotham-Font/gotham_thin.otf);
     /* Путь к файлу со шрифтом */
 }
 
 @font-face {
-    font-family: Gotham-Bold;
+    font-family: Gotham;
     /* Гарнитура шрифта */
-    src: url(Gotham-Font/Gotham-Bold.otf);
+    src: url(Gotham-Font/gotham_bold.otf);
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Gothamlight;
+    /* Гарнитура шрифта */
+    src: url(Gotham-Font/gotham_xlight.otf);
     /* Путь к файлу со шрифтом */
 }
 
 .start {
-    width: 100%;
-    height: 100%;
-    background-color: black;
+
+}
+
+#new {
+    background: linear-gradient(87.33deg, #0060DB 0%, #00B1FF 100%);
 }
 
 
 
 .banner {
-    
+
     width: 100%;
     height: 415px;
-    /* background: linear-gradient(87.33deg, #0060DB 0%, #00B1FF 100%); */
+
 
     display: flex;
     align-items: center;
-    left: 160px;
+
 }
 
 .hero_row {
-    font-family: 'Gotham-Bold';
+    font-family: 'Gotham';
     font-style: normal;
     font-weight: bold;
     font-size: 35px;
     line-height: 145%;
     /* or 51px */
     color: #FFFFFF;
-    
+
 }
 
 .hero_row2 {
-    font-family: 'Gotham-Bold';
+    font-family: 'Gothamlight';
     font-style: normal;
     font-weight: lighter;
     font-size: 35px;
     line-height: 145%;
     /* or 51px */
     color: #FFFFFF;
-    
+
 }
 
-.hero{
-    position: relative;
-    left: 160px;
-}
+.hero {}
 
-.image_card{
+.image_card {
     width: 100%;
     height: 100%;
     background-color: transparent;
     /* background: linear-gradient(87.33deg, #0060DB 0%, #00B1FF 100%); */
 
+}
+
+
+.global {
+    margin-top: 60px;
+}
+
+.globalheader {
+    margin-bottom: 20px;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 145%;
+    /* or 51px */
+    color: #000000;
+
+
+}
+
+.globaltext {
+    color: black;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+    /* or 26px */
+
+    text-align: center;
+}
+
+.globaltext2 {
+    margin-top: 20px;
+    font-family: 'Gothamlight';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    text-align: center;
+    color: #0D0D0D;
+}
+
+.final{
+    margin-top: 77px;
+}
+
+.finaltext{
+    margin-top: 20px;
+    font-family: 'Gothamlight';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 140%;
+    color: #0D0D0D;
+}
+.alltextfinal{
+    
 }
