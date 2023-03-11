@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Gotham;
+    font-family: Gothambold;
     font-display: swap;
     src: url(fonts/gotham_bold.otf) format("otf");
     font-weight: bold;
@@ -64,8 +64,16 @@ p {
     line-height: 24px;
 }
 
+@media (max-width: 568px) {
+    p {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
 .wrapper-caption {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .wrapper-caption h2 {
@@ -341,6 +349,7 @@ p {
 @media (max-width: 568px) {
     .global .global__title {
         width: 100%;
+        font-size: 18px;
     }
 }
 
@@ -407,4 +416,8 @@ p {
         align-items: center;
         text-align: left;
     }
+}
+
+.final__info__color{
+    color: #4689E8
 }
