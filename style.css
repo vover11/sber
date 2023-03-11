@@ -1,75 +1,246 @@
 @font-face {
     font-family: Gotham;
-    /* Гарнитура шрифта */
-    src: url(Gotham-Font/gotham_thin.otf);
-    /* Путь к файлу со шрифтом */
+    font-display: swap;
+    src: url(fonts/Gotham-Bold.otf) format("otf");
+    font-weight: bold;
+    font-style: normal
 }
 
 @font-face {
     font-family: Gotham;
-    /* Гарнитура шрифта */
-    src: url(Gotham-Font/gotham_bold.otf);
-    /* Путь к файлу со шрифтом */
+    font-display: swap;
+    src: url(fonts/Gotham-Medium.otf) format("otf");
+    font-weight: 500;
+    font-style: normal
 }
 
 @font-face {
-    font-family: Gothamlight;
-    /* Гарнитура шрифта */
-    src: url(Gotham-Font/gotham_xlight.otf);
-    /* Путь к файлу со шрифтом */
+    font-family: Gotham;
+    font-display: swap;
+    src: url(fonts/Gotham-Regular.otf) format("otf");
+    font-weight: normal;
+    font-style: normal
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: 'Gotham', sans-serif;
+    color: #0D0D0D;
+}
+
+h1 {
+    font-family: 'Gotham', sans-serif;
+}
+
+h2 {
+    font-family: 'Gotham', sans-serif;
+}
+
+p {
+    font-family: 'Gotham', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.wrapper-caption {
+    display: flex;
+}
+
+.wrapper-caption h2 {
+text-align: center;
+}
+
+@media (max-width: 768px) {
+    .wrapper-caption {
+       justify-content: center;
+    }
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1160px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 auto;
+    }
 }
 
 .start {
-
-}
-
-#new {
-    background: linear-gradient(87.33deg, #0060DB 0%, #00B1FF 100%);
-}
-
-
-
-.banner {
-
     width: 100%;
-    height: 415px;
+    max-width: 100%;
+    background: linear-gradient(87.33deg, #0060DB 0%, #00B1FF 100%);
+    overflow: hidden;
+    min-height: 415px;
+}
 
+@media (max-width: 568px) {
+    .start {
+        min-height: 550px;
+        padding-bottom: 30px;
+    }
+}
 
+@media (max-width: 450px) {
+    .start {
+        min-height: 500px;
+    }
+}
+
+.start  .start__container {
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
+    position: relative;
+    min-height: 415px;
 }
 
-.hero_row {
-    font-family: 'Gotham';
+@media (max-width: 568px) {
+    .start .start__container {
+        min-height: 550px;
+    }
+}
+
+@media (max-width: 450px) {
+    .start .start__container {
+        min-height: 500px;
+    }
+}
+
+@media (max-width: 568px) {
+    .start  .start__container {
+        flex-direction: column-reverse;
+        position: inherit;
+    }
+}
+
+.start .start__images {
+    max-width: 650px;
+    height: 415px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media (max-width: 1024px) {
+    .start .start__images {
+        right: -60px;
+    }
+}
+
+@media (max-width: 860px) {
+    .start .start__images {
+        right: -120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .start .start__images {
+        right: -170px;
+    }
+}
+
+@media (max-width: 680px) {
+    .start .start__images {
+        right: -220px; 
+    }
+}
+
+@media (max-width: 568px) {
+    .start .start__images {
+        position: absolute;
+        top: 0;
+        right: 0px; 
+        left: 0;
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .start .start__images {
+        height: 320px;
+    }
+}
+
+
+.start .start__images img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 568px) {
+    .start .start__images img {
+        object-fit: cover;
+    }
+}
+
+.caption {
+    width: 40%;
+    display: flex;  
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .caption {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 568px) {
+    .caption {
+      justify-content: center;
+    }
+}
+
+.caption .caption__title {
     font-style: normal;
+    font-size: 35px;
+    line-height: 145%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 568px) {
+    .caption .caption__title  {
+      text-align: center;
+    }
+}
+
+.caption .caption__bold {
     font-weight: bold;
-    font-size: 35px;
-    line-height: 145%;
-    /* or 51px */
-    color: #FFFFFF;
-
 }
 
-.hero_row2 {
-    font-family: 'Gothamlight';
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 35px;
-    line-height: 145%;
-    /* or 51px */
-    color: #FFFFFF;
-
+.caption .caption__medium {
+    font-weight: normal;
 }
-
-.hero {}
 
 .image_card {
     width: 100%;
-    height: 100%;
-    background-color: transparent;
-    /* background: linear-gradient(87.33deg, #0060DB 0%, #00B1FF 100%); */
-
+    max-width: 100%;
 }
 
 
@@ -77,56 +248,123 @@
     margin-top: 60px;
 }
 
-.globalheader {
-    margin-bottom: 20px;
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 35px;
-    line-height: 145%;
-    /* or 51px */
-    color: #000000;
-
-
+.global .global__list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.globaltext {
-    color: black;
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 120%;
-    /* or 26px */
+.global .global__item {
+    width: calc(25% - 20px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
 
+
+@media (max-width: 860px) {
+    .global .global__item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 568px) {
+    .global .global__item {
+        width: 100%;
+    }
+}
+
+.global .global__images {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.global .global__images img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .global .global__images img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 568px) {
+    .global .global__images img {
+        width: 70%;
+    }
+}
+
+.global .global__title {
     text-align: center;
 }
 
-.globaltext2 {
-    margin-top: 20px;
-    font-family: 'Gothamlight';
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 18px;
-    line-height: 140%;
-    /* or 25px */
+.global .global__description {
     text-align: center;
-    color: #0D0D0D;
 }
 
-.final{
+.final {
     margin-top: 77px;
 }
 
-.finaltext{
-    margin-top: 20px;
-    font-family: 'Gothamlight';
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 18px;
-    line-height: 140%;
-    color: #0D0D0D;
+.final .final__container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
-.alltextfinal{
-    
+
+@media (max-width: 768px) {
+    .final .final__container {
+        flex-direction: column;
+    }
 }
+
+.final .final__images {
+    max-width: 40%;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .final .final__images {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 568px) {
+    .final .final__images {
+        max-width: 100%;
+    }
+}
+
+.final .final__images img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.final .final__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+}
+
+@media (max-width: 768px) {
+    .final .final__content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 568px) {
+    .final .final__content {
+        align-items: center;
+        text-align: center;
+    }
+}
+
