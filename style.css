@@ -56,7 +56,9 @@ h1 {
 }
 
 h2 {
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Gotham-Book', sans-serif;
+    font-weight: bold;
+    font-style: normal;
     font-size: 32px;
 
 }
@@ -89,7 +91,7 @@ p {
 
 .wrapper-caption h2 {
     text-align: center;
-    font-family: 'Gotham', sans-serif;
+    
 
 
 }
@@ -338,9 +340,9 @@ p {
 
 .global .global__title {
     /* добавил */
-    width: 80%;
+    width: 100%;
     text-align: center;
-    font-family: 'Gotham';
+    font-family: 'Gotham-Book', sans-serif;
     font-size: 22px;
     font-weight: bold;
 
