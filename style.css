@@ -1,26 +1,33 @@
 @font-face {
-    font-family: Gothambold;
-    font-display: swap;
-    src: url(fonts/gotham_bold.otf) format("otf");
-    font-weight: bold;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Gotham;
-    font-display: swap;
-    src: url(fonts/gotham_medium.otf) format("otf");
-    font-weight: 500;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Gotham;
-    font-display: swap;
-    src: url(fonts/gotham_xlight.otf) format("otf");
+    font-family: 'Gotham-Book';
+    src: url('fonts/Gotham-Book.ttf') format('truetype');
     font-weight: normal;
-    font-style: normal
+    font-style: normal;
 }
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('fonts/Gotham-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham-Thin';
+    src: url('fonts/Gotham-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+/* @font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham-Thin.ttf') format('truetype'),
+        url('fonts/Gotham-Bold.ttf') format('truetype'),
+        url('fonts/Gotham-Book.ttf') format('truetype'),
+        
+} */
 
 * {
     padding: 0px;
@@ -37,18 +44,21 @@
 
 body {
     background: #fff;
-    font-family: 'Gotham', sans-serif;
+    /* font-family: 'Gotham', sans-serif; */
     color: #0D0D0D;
 }
 
 h1 {
     font-family: 'Gotham', sans-serif;
     
+
+
 }
 
 h2 {
     font-family: 'Gotham', sans-serif;
     font-size: 32px;
+
 }
 
 @media (max-width: 568px) {
@@ -59,7 +69,8 @@ h2 {
 
 
 p {
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Gotham-Thin', sans-serif;
+    font-weight: bold;
     font-size: 18px;
     line-height: 24px;
 }
@@ -79,7 +90,7 @@ p {
 .wrapper-caption h2 {
     text-align: center;
     font-family: 'Gotham', sans-serif;
-    
+
 
 }
 
@@ -255,6 +266,7 @@ p {
 }
 
 .caption .caption__medium {
+    font-family: 'Gotham-Thin', sans-serif;
     font-weight: normal;
 }
 
@@ -320,20 +332,21 @@ p {
     .global .global__images img {
         width: 160px;
         height: 160px;
-        
+
     }
 }
 
 .global .global__title {
     /* добавил */
-    width: 80%;            
+    width: 80%;
     text-align: center;
     font-family: 'Gotham';
     font-size: 22px;
     font-weight: bold;
-    
+
 }
-    /* добавил */
+
+/* добавил */
 @media (max-width: 860px) {
     .global .global__title {
         width: 100%;
@@ -418,6 +431,6 @@ p {
     }
 }
 
-.final__info__color{
+.final__info__color {
     color: #4689E8
 }
